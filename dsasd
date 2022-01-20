@@ -3966,8 +3966,8 @@ spawn(function()
 	  end
 end)
 main:Label("Bypass Need 100 HP")
-main:Button("Bypass + Godmode",_G.BypassTP,function(value)
-	_G.BypassTP = value
+main:Button("Bypass + Godmode",function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/ZVHyF6EU", true))()
 end)
 main:Toggle("Auto Haki",true,function(value)
     _G.Haki = value
@@ -4146,13 +4146,6 @@ spawn(function()
             game:GetService("Workspace")["noclip"].CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame  * CFrame.new(0,-5,0)
         end
     end
-end)
-spawn(function()
-	while wait() do
-		if _G.BypassTP then
-			loadstring(game:HttpGet("https://pastebin.com/raw/ZVHyF6EU", true))()
-		end
-	end
 end)
 main:Button("Redeem Code",function()
    function UseCode(Text)
