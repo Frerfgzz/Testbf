@@ -3966,6 +3966,7 @@ spawn(function()
 	  end
 end)
 main:Label("Bypass Need 100 HP")
+_G.BypassTP = false
 main:Button("Bypass + Godmode",function(value)
 	_G.BypassTP = value
 end)
@@ -4777,8 +4778,8 @@ if OldWorld then
 		end
 	end)
 end
+
 if world2 then
-	_G.Auto_Legendary_Sword = false
     main:Toggle("Auto Buy Legendary Sword",false,function(value)
 		_G.Auto_Legendary_Sword = value
 	end)
