@@ -6,21 +6,14 @@ local page1 = tap1:addpage()
 local page2 = tap1:addpage()
 local page3 = tap1:addpage()
 local page4 = tap1:addpage()
+
 page1:Ti("Farm")
 
 page1:Toggle("Auto Farm",false, function(value)
     _G.FarmLevelTween
 end)
 
-page1:Button("Button1", function(value)
-    print(value)
-end)
-
-page1:Button1("Button2", function(value)
-    print(value)
-end)
-
-local getdrop = page1:DropDown("SelectToolWeapon", function(value)
+getdrop = page1:DropDown("SelectToolWeapon", function(value)
     _G.SelectWeapon = value
 end)
 
@@ -36,36 +29,6 @@ page1:Button("Refresh Tool", function(value)
             SelectWeapon:Add(v.Name)
         end
     end
-end)
-
-local getlable = page1:Label("Text Label")
-
-local getslider = page1:Slder("Slider",1,100,8, function(value)
-    print(value)
-end)
-
-page4:Ti("Title")
-
-page4:Toggle("Toggle1",nil, function(value)
-    print(value)
-end)
-
-page4:Button("Button1", function(value)
-    print(value)
-end)
-
-page4:Button1("Button2", function(value)
-    print(value)
-end)
-
-local getdrop = page4:DropDown("Name DropDown","Name",{"a","b","c"}, function(value)
-    print(value)
-end)
-
-local getlable = page4:Label("Text Label")
-
-local getslider = page4:Slder("Slider",1,100,8, function(value)
-    print(value)
 end)
 
 function totarget(CFgo)
