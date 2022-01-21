@@ -1,5 +1,4 @@
 _G.FarmLevelTween = true
-_G.SelectWeapon = value
 
 
 
@@ -519,6 +518,10 @@ function totarget(CFgo)
         tween:Play()
     end)
     if not tween then return err end
+end
+
+function _G.SelectWeapon(value)
+    _G.SelectWeapon = value
 end
 
 spawn(function()
