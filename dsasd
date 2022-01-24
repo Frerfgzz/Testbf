@@ -4245,7 +4245,8 @@ spawn(function()
         end
     end
 end)
-main:Toggle("LockMob",nil,function(d)
+
+main:Toggle("LockMob",false,function(d)
 _G.LockMob = d
 if _G.LockMob == true then
 while _G.LockMob do wait()
@@ -4276,6 +4277,7 @@ if _G.LockMob == false then
             end
 end
 end)
+
 main:Button("Redeem Code",function()
    function UseCode(Text)
        game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer(Text)
