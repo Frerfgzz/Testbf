@@ -4274,7 +4274,7 @@ if _G.LockMob == false then
                     wait(0.2)
                     x.HumanoidRootPart.Anchored = false
                 end 
-            end
+    end
 end
 end)
 
