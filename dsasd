@@ -4246,7 +4246,7 @@ spawn(function()
     end
 end)
 
-main:Toggle("LockMob",true,function(d)
+main:Toggle("LockMob",nil,function(d)
 _G.LockMob = d
 if _G.LockMob == true then
 while _G.LockMob do wait()
